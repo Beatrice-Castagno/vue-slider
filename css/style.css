@@ -1,0 +1,38 @@
+.container_carosello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.freccia_prev i,
+.freccia_next i {
+  font-size: 45px;
+}
+
+.img_carosello {
+  background-color: yellow;
+  height: 600px;
+  width: 800px;
+  margin: 0 30px;
+}
+
+.img_carosello img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.bullet_carosello {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-content: flex-end;
+ align-items: center;
+ height: 550px;
+}
+
+.bullet_carosello i {
+  color: black;
+  font-size: 25px;
+}

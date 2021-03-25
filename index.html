@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <title>Carousel VueJs</title>
+</head>
+<body>
+  <div id="root">
+    <div class="container_carosello">
+      <div class="freccia_prev">
+        <i @click="frecciaPrev" class="fas fa-chevron-left"></i>
+      </div>
+
+      <div class="img_carosello">
+        <img v-bind:src="images[imagesIndex]" alt="alfa romeo giulia">
+        <div class="bullet_carosello">
+          <i class="fas fa-circle"></i>
+        </div>
+      </div>
+      <div class="freccia_next">
+        <i @click="frecciaNext" class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+<script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
