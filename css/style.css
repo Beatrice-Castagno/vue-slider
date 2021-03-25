@@ -8,11 +8,11 @@
 .freccia_prev i,
 .freccia_next i {
   font-size: 45px;
+  cursor: pointer;
 }
 
 .img_carosello {
-  background-color: yellow;
-  height: 600px;
+  height: 500px;
   width: 800px;
   margin: 0 30px;
 }
@@ -20,19 +20,22 @@
 .img_carosello img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+   transition: all 0.5s ease-in-out;
 }
 
 .bullet_carosello {
  display: flex;
- flex-direction: column;
- justify-content: flex-end;
- align-content: flex-end;
- align-items: center;
- height: 550px;
+ justify-content: center;
 }
 
 .bullet_carosello i {
   color: black;
   font-size: 25px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.bullet_carosello i.active {
+  color: lightgrey;
 }

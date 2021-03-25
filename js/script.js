@@ -7,8 +7,9 @@ var app = new Vue(
    "img/aston-martin-v8-vantage-1977.jpg",
    "img/chevrolet-camaro.jpg"
   ],
- imagesIndex: 0
+  imagesIndex: 0,
  },
+
  methods: {
    frecciaNext: function() {
      this.imagesIndex++;

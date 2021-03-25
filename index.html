@@ -15,11 +15,10 @@
       <div class="freccia_prev">
         <i @click="frecciaPrev" class="fas fa-chevron-left"></i>
       </div>
-
       <div class="img_carosello">
         <img v-bind:src="images[imagesIndex]" alt="alfa romeo giulia">
         <div class="bullet_carosello">
-          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle" v-for="(image, index) in images" v-bind:class="imagesIndex == index ? 'active' : '' " @click="imagesIndex = index"></i>
         </div>
       </div>
       <div class="freccia_next">
